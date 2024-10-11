@@ -14,9 +14,9 @@ const storeSchema =  new mongoose.Schema({
     cuisines : [{type: String , required: true}],
     menuItems: [menuItemschema],
     imageUrl :{ type:String ,required: true },
-    lastUpdated : {type :String, required :true}
+    lastUpdated: { type: Date, required: true } 
 
 })
 
-const store = mongoose.model("Store",storeSchema)
-export default store
+const Store = mongoose.model("Store",storeSchema)
+export default Store
