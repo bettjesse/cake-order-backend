@@ -16,6 +16,6 @@ const upload = multer({
 })
 // api/my/CakeStore
 
-router.post("/" , jwtCheck,jwtParse, upload.single("imageFile"), MyStoreController.createMyStore)
+router.post("/" , jwtCheck, jwtParse, upload.single("imageFile"), MyStoreController.createMyStore)
 
 export default router
